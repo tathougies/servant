@@ -29,6 +29,10 @@ data AsServerT (m :: * -> *)
 instance GenericMode (AsServerT m) where
     type AsServerT m :- api = ServerT api m
 
+data Embed mode
+instance GenericMode (Embed mode) where
+    type Embed mode :- api = ToServant api mode
+
 type AsServer = AsServerT Handler
 
 -- | Transform a record of routes into a WAI 'Application'.

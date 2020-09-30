@@ -6,7 +6,7 @@ packages:
   servant-docs/
   servant-foreign/
   servant-server/
-  doc/tutorial/
+
 
 -- servant streaming
 packages:
@@ -19,27 +19,7 @@ packages:
 --   servant-jsaddle/
 
 -- Cookbooks
-packages:
-  doc/cookbook/basic-auth
-  doc/cookbook/curl-mock
-  doc/cookbook/custom-errors
-  doc/cookbook/basic-streaming
-  doc/cookbook/db-postgres-pool
---  doc/cookbook/db-sqlite-simple
-  doc/cookbook/file-upload
-  doc/cookbook/generic
-  -- doc/cookbook/hoist-server-with-context
---  doc/cookbook/https
-  -- doc/cookbook/jwt-and-basic-auth/
-  doc/cookbook/pagination
-  -- doc/cookbook/sentry
-  doc/cookbook/testing
-  doc/cookbook/structuring-apis
-  doc/cookbook/using-custom-monad
-  doc/cookbook/using-free-client
-  -- doc/cookbook/open-id-connect
-
-tests: True
+tests: False
 optimization: False
 -- reorder-goals: True
 
